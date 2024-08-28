@@ -21,3 +21,7 @@ phases:
       - echo Executing Post Build Phase
     finally:
       - echo Executing Post Build Finally
+artifacts:
+  files: 
+   - '**/*'
+base-directory: 'dist'
