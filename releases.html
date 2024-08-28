@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <title>Instant Vintage | Releases</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/IV-dark.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/IV-dark.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/IV-dark.png">
+    <link rel="manifest" href="assets/favicon/IV-dark.png">
+    <link rel="mask-icon" href="assets/favicon/IV-dark.png" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/IV-dark.png">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/IV-dark.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+          <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+            <div class="container px-3">
+              <a href="index.html" class="navbar-brand pe-3">
+                <img src="assets/favicon/IV-dark.png" width="47" alt="IV">
+                Instant Vintage
+              </a>
+              <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+                <div class="offcanvas-header border-bottom border-light">
+                  <h5 class="offcanvas-title text-white">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav nav justify-content-end mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                      <a href="/artists.html" class="nav-link">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/releases.html" class="nav-link active warning link-warning" aria-current="artist">Releases</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pe-lg-1 ms-auto me-4" data-bs-theme="dark">
+                <div class="form-check form-switch mode-switch" data-bs-toggle="mode">
+                  <input type="checkbox" class="form-check-input" id="theme-mode">
+                  <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                  <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+                </div>
+              </div>
+            </div>
+          </header>
+
+
+      <!-- Hero -->
+      <section class="position-relative pt-5 mb-5" style="background-color: #151922;">
+        <span class="d-dark-mode-none d-block position-absolute start-0 bottom-0 w-100 bg-white" style="height: 19.875vw;"></span>
+        <span class="d-dark-mode-block d-none position-absolute start-0 bottom-0 w-100 bg-light" style="height: 19.875vw;"></span>
+        <div class="container position-relative zindex-2 pt-5" data-bs-theme="dark">
+
+          <!-- Breadcrumb -->
+          <nav class="pt-lg-4" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Releases</li>
+            </ol>
+          </nav>
+
+          <!-- Page title -->
+          <div class="mt-4 mb-lg-5 mb-4 py-3">
+            <h1 class="display-4 mb-0">Releases</h1>
+          </div>
+
+          <!-- Gallery -->
+          <div class="row g-md-4 g-3">
+            <div class="col-md-6">
+              <img src="assets/img/about/hero/S01.JPG" alt="Hero image" class="rounded-3">
+            </div>
+            <div class="col-md-3 col-6 d-md-block d-none mt-5 pt-3 pt-xl-4">
+              <img src="assets/img/about/hero/S05.png" alt="Hero image" class="rounded-3">
+            </div>
+            <div class="col-md-3 col-6 d-md-block d-none">
+              <img src="assets/img/about/gallery/S01.JPEG" alt="Hero image" class="rounded-3">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Story -->
+      <section class="container mb-5 pt-md-1 pt-lg-4 pt-xl-5">
+        <div class="mt-4 py-2 pb-sm-3 pb-md-4 pb-lg-5 mx-auto text-center" style="max-width: 46.625rem;">
+          <h2 class="h1 mb-4">Music Releases</h2>
+          <p class="mb-4">New Music Coming Soon!</p>
+        </div>
+
+        <!-- music releases -->
+        <div class="steps steps-center steps-sm steps-horizontal-lg" style="--si-steps-number-size-sm: 1.5rem; --si-steps-number-inner-size-sm: 1rem; --si-steps-number-bg: rgba(99,102,241,.2); --si-steps-number-inner-bg: #6366f1;">
+
+          <!-- Step -->
+          <div class="step w-100 mx-auto" style="max-width: 26rem;">
+            <div class="step-body">
+              <h3 class="mb-3">Burdens</h3>
+              <p class="mb-3">Sincire</p>
+              <img src="./assets/img/blog/burdens-cover.png" alt="burdens-cover">
+             <a target="_blank" href="https://social.tunecore.com/linkShare?linkid=XLyMHMIFPDfuU6lz2HmzhA"><p class="mb-0">Click here...</p></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container text-center pt-2 pt-sm-3">
+        <div class="navbar-brand d-inline-block text-dark p-0 me-0 mb-4 pb-md-2">
+          <img src="assets/favicon/IV-dark-2.png" width="100" alt="IV">
+          Instant Vintage
+        </div>
+        <ul class="nav align-items-center justify-content-center mb-4 pb-1 pb-md-3">
+          <li class="nav-item mx-lg-1 px-md-2">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item mx-lg-1 px-md-2">
+            <a href="artists.html" class="nav-link">Artists</a>
+          </li>
+          <li class="nav-item mx-lg-1 px-md-2">
+            <a href="releases.html" class="nav-link">Releases</a>
+          </li>
+        </ul>
+        <div class="d-inline-block mt-n3 ms-n3 pb-2 pb-md-3 mb-4 mb-lg-5">
+          <a href="https://www.instagram.com/instantvintage.iv/" class="btn btn-icon btn-secondary btn-instagram mt-3 ms-3"
+            aria-label="Instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@InstantVintage-IV" class="btn btn-icon btn-secondary btn-youtube mt-3 ms-3"
+            aria-label="YouTube">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+        <p class="mb-0 mx-auto fs-sm text-muted" style="max-width: 53.5rem"><span class="opacity-100">&copy; All rights reserved. Made by </span>
+        <a class="nav-link d-inline-block p-0" target="_blank" rel="noopener">Instant Vintage</a></p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
