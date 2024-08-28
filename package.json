@@ -1,9 +1,9 @@
 {
-  "name": "silicon-html",
+  "name": "InstVint",
   "description": "Silicon - Multipurpose Bootstrap 5 Template & UI Kit",
-  "version": "1.6.0",
-  "homepage": "https://silicon.createx.studio",
-  "author": "https://createx.studio/",
+  "version": "1.0.0",
+  "homepage": "http://instantvintages.com",
+  "author": "Eric Harris",
   "license": "ISC",
   "main": "index.html",
   "scripts": {
@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@lottiefiles/lottie-player": "^2.0.2",
+    "aws-sdk": "^2.1684.0",
     "bootstrap": "^5.3.2",
     "boxicons": "^2.1.4",
     "cleave.js": "^1.6.0",
