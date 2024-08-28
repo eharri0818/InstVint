@@ -20,7 +20,3 @@ https://nodejs.org/en/
 4. To access additional information about other available npm commands (scripts), please refer to the relevant documentation article.
 
 **For more details see the documentation that comes with the theme.**
->>>>>>> 582bf2b (first commit)
->>>>>>> 801099d (first commit)
-
-##We HERE
