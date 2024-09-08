@@ -1,8 +1,9 @@
 # InstVint
-=======
+
 ## The documentation is available online here:
 https://silicon.createx.studio/docs/getting-started.html
 OR
+
 **Offline**: inside Silicon/docs folder
 
 ## To download Figma files which include all design mockups follow the link below:
