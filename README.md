@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# InstVint
-=======
-<<<<<<< HEAD
 # InstVint
 =======
 ## The documentation is available online here:
